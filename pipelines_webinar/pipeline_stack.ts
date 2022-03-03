@@ -4,7 +4,7 @@ import * as cpa from '@aws-cdk/aws-codepipeline-actions';
 import * as pipelines from '@aws-cdk/pipelines';
 import { WebServiceStage } from './webservice_stage'; 
 
-export class PipelineStackNew extends Stack {
+export class NodeJsPipelineStack extends Stack {
     constructor(scope: Construct, id: string, props?: StackProps) {
         super(scope, id, props);
 
