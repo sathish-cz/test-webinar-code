@@ -14,7 +14,7 @@ export class PipelinesWebinarStack extends Stack {
     const handler = new lambda.Function(this, 'Handler', {
       code: new lambda.AssetCode(path.resolve(__dirname, 'lambda')),
       handler: 'handler.handler',
-      runtime: lambda.Runtime.NODEJS_14_X,
+      runtime: lambda.Runtime.NODEJS_12_X,
     });
 
     const alias = new lambda.Alias(this, 'x', {

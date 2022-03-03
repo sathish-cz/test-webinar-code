@@ -33,7 +33,7 @@ export class NodeJsPipelineStack extends Stack {
 
         // Pre-prod
         //
-        const preProdApp = new WebServiceStage(this, 'Pre-Prod');
+        const preProdApp = new WebServiceStage(this, 'Pre-Prod-New');
         const preProdStage = pipeline.addApplicationStage(preProdApp);
         const serviceUrl = pipeline.stackOutput(preProdApp.urlOutput);
 
