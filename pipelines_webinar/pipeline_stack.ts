@@ -33,8 +33,8 @@ export class PipelineStackNew extends Stack {
 
         // Pre-prod
         //
-       // const preProdApp = new WebServiceStage(this, 'Pre-Prod-New');
-        // const preProdStage = pipeline.addApplicationStage(preProdApp);
+        const preProdApp = new WebServiceStage(this, 'Pre-Prod-New');
+        const preProdStage = pipeline.addApplicationStage(preProdApp);
         // const serviceUrl = pipeline.stackOutput(preProdApp.urlOutput);
 
         //preProdStage.addActions(new pipelines.ShellScriptAction({
